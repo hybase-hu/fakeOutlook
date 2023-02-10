@@ -9,8 +9,8 @@ class LoginForm(models.ModelForm):
         model = Account
         fields = ['email','password']
 
-    email = forms.EmailField(widget=forms.EmailInput(attrs={
-        "type":"email",
+    email = forms.CharField(widget=forms.TextInput(attrs={
+
         "class":"form-control"
     }),label="Domain\\user name")
 

@@ -4,3 +4,27 @@
     text-align:center;
 
 }
+@media only screen and (max-width:600px) {
+    .mobile {
+        display:none;
+    }
+    .mobile-form {
+        width:100%;
+    }
+}
+
+body {
+    background-color:#FDFDFD;
+}
+
+.mobile-form {
+    max-width:25rem;
+}
+
+.button {
+    border:none;
+    padding:1rem;
+    background:transparent;
+    font-size:25px;
+    color:#0072CC;
+}
