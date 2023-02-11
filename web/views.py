@@ -1,8 +1,10 @@
 import datetime
 
 from django.contrib import messages
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from colorama import Fore, Style
+from django.urls import reverse
+
 from web.forms import LoginForm
 
 
@@ -36,3 +38,4 @@ def login(request):
 
 
     return render(request,template,context)
+
